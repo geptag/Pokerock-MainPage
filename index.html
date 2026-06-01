@@ -14,15 +14,19 @@
 
  <style>
         .Titulo {
-            font-family: "Luckiest Guy", cursive;;
-            color: white;
+            font-family: "Luckiest Guy", cursive;
+            color: #FFD1D1;
             font-size: 250%;
             margin: 1%;
             letter-spacing: 2px;
+            transition: 1.5s;
+        }
+        .Titulo:hover{
+            transform: rotateY(360deg);
         }
 
         header {
-            background-color: #680f09;
+            background-color: #AA4949;
             width: 100%;
             height: 80%;
             display: flex;
@@ -30,54 +34,51 @@
         }
 
         body {
-            background-color: #9c1b12;
+            background-color: #DB7171;
             margin: 0%;
         }
 
         .BotoesDoMenu {
-            padding-top: %;
+        width: 100%;
         }
 
-        .Album {
+        .Album /* BOTÃO DO ALBUM */ { 
             background-color: rgba(0, 0, 0, 0);
-            padding: 0;
             border-color: rgba(0, 0, 0, 0);
-            height: 45%;
-            width: 45%;
+            width: 55px;
         }
 
-        .albuns {
-            height: 15%;
-            width: 15%;
-            padding: 0%;
-            margin-left: 1%;
+        .albuns /* IMAGEM DO BOTÃO DO ALBUM */ {
+            width: 100%;
+            height: 100%;
+            border: 5px solid transparent;
+            transition: 0.3s ease-in-out;
         }
 
         .albuns:hover {
-            background-color: #530a05;
-            border: 5px solid #530a05;
             border-radius: 25%;
+            border: 5px solid rgba(0, 0, 0, 0);
+            background-color: #612020;
         }
 
-        .Pokerock {
+        .Pokerock /* BOTÃO DA POKEROCK*/ {
             background-color: rgba(124, 79, 79, 0);
-            padding: 0%;
             border-color: rgba(119, 112, 112, 0);
-            height: 45%;
-            width: 45%;
+            width: 55px;
         }
 
-        .pokerockdouser {
-            height: 15%;
-            width: 15%;
-            padding: 0%;
-            margin-left: 1%;
+        .pokerockdouser /* IMAGEM DO BOTÃO DA POKEROCK*/ {
+            width: 100%;
+            height: 100%;
+            border: 5px solid transparent;
+            transition: 0.3s ease-in-out;
         }
 
         .pokerockdouser:hover {
-            background-color: #530a05;
-            border: 5px solid #530a05;
+            background-color: #612020;
+            border: 5px solid rgba(0, 0, 0, 0);
             border-radius: 25%;
+            
         }
 
         .AbrirCartas {
@@ -93,57 +94,62 @@
             margin-bottom: 540px;
         }
 
-        .Linha {
-            margin-top: 5%;
-            border: none;
-            border-radius: 35%;
-            border-top: 8px solid #680f09;
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
         .Abrir {
-            color: white;
+            color: #FFD1D1;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 130%;
-            background-color: #680f09;
+            background-color: #AA4949;
             border-radius: 20%;
             height: 45px;
             width: 95px;
             border: 0px;
             border-style: solid;
+            transition: 0.2s ease-in-out;
         }
 
         .Abrir:hover {
-            background-color: #530a05;
+            background-color: #612020;
+        }
+
+        .separador{
+        display: flex;
+        justify-content: center;
+        margin-top: 4%;
+        }
+
+        .Linha {
+            margin-top: 1.8%;
+            border: none;
+            border-radius: 35%;
+            border-top: 8px solid #612020;
+            width: 90%;
         }
 
         .pokebolainsana {
-            width: 3%;
-            top: 82.8%;
-            left: 48.5%;
-            display: flex;
-            position: absolute;
-            justify-content: center;
-            align-items: center;
+        width: 40px;
+        position: absolute;
+        transition: 0.5s ease-in-out;
         }
 
+        .pokebolainsana:hover{
+        transform: rotateZ(360deg);
+        }
 
-        .pesquisarr {
+        .pesquisarr{
+            background-color: #FFD1D1;
+            font-size: 120%;
             outline: none;
-            border: none;
+            border: 2px solid #1f1e33 ;
+            border-radius: 5%;
         }
 
         .pesquisarr:hover {
-
-            border: 2px solid black;
+            border: 2px solid #201010;
         }
 
         .CardsMisteriosos {
             font-family: Arial, Helvetica, sans-serif;
-            color: white;
+            color: #FFD1D1;
             font-size: 120%;
             display: flex;
             justify-content: center;
@@ -151,10 +157,10 @@
         }
 
         .Card1{
-            padding: 4%;
-            border: black 3px solid;
+            padding: 5%;
+            border: #612020 3px solid;
             border-radius: 12%;
-            background-color: rgb(131, 43, 43);
+            background-color: #AA4949;
             transition: 0.8s ease-in-out;
         }
 
@@ -163,10 +169,10 @@
         }
 
         .Card2 {
-            padding: 4%;
-            border: black 3px solid;
+            padding: 5%;
+            border: #612020 3px solid;
             border-radius: 12%;
-            background-color: rgb(131, 43, 43);
+            background-color: #AA4949;
             transition: 0.8s ease-in-out;
         }
 
@@ -175,16 +181,18 @@
         }
 
         .Card3 {
-            padding: 4%;
-            border: black 3px solid;
+            padding: 5%;
+            border: #612020 3px solid;
             border-radius: 12%;
-            background-color: rgb(131, 43, 43);
+            background-color: #AA4949;
             transition: 0.8s ease-in-out;
         }
 
         .Card3:hover {
             transform: rotateY(360deg);
         }
+
+
     </style>
     <header>
         <h1 class="Titulo">Pokérock</h1>
