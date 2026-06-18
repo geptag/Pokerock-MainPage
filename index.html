@@ -270,20 +270,27 @@
                 <h1 class="cardcharmander">Charmander</h1> -->
                 </div>
             </div>
+
+            
+            
         </section>
 
     </main>
 <script>
 
-    let todosPokemon = ["Pikachu", "Squirtle", "Bulbasaur", "Charmander"];
+    // let todosPokemon = ["Pikachu", "Squirtle", "Bulbasaur", "Charmander"];
+    let todosPokemonOBJ = [{nome: "Pikachu", img: "pikachu.png", tipo: "Elétrico"},
+                           {nome: "Squirtle", img: "squirtle.png", tipo: "água"},
+                           {nome: "Bulbasaur", img: "bulbasaur.png", tipo: "planta"},
+                           {nome: "Charmander", img: "charmander.webp", tipo: "fogo"}]
+
 
      function cards(){
         let pokerocks = document.getElementById('pokerocks');
-        pokerocks.innerHTML = 
-        `
-        <h1 class="cardpikachu">${todosPokemon[0]}</h1>
-        `
-    }
+        todosPokemonOBJ.forEach((pokerocks) => {pokerocks.innerHTML += `
+            <div><h1>${pokerocks.nome}</h1><img src="${pokerocks.img}" alt=""><h2>${pokerocks.tipo}</h2></div>
+            `});
+    } //DEU ALGO DE ERRADO AI
     cards();
 </script>
 </body>
