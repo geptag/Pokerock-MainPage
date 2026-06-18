@@ -192,6 +192,42 @@
             transform: rotateY(360deg);
         }
 
+        .pokerockers{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #FFD1D1;
+            font-size: 120%;
+            display: flex;
+            justify-content: center;
+            gap: 3%;
+        }
+
+         .cardpikachu{
+            padding: 5%;
+            border: #612020 3px solid;
+            border-radius: 12%;
+            background-color: #AA4949; 
+        }
+
+         .cardsquirtle{
+            padding: 5%;
+            border: #612020 3px solid;
+            border-radius: 12%;
+            background-color: #AA4949; 
+        }
+
+         .cardbulbasaur{
+            padding: 5%;
+            border: #612020 3px solid;
+            border-radius: 12%;
+            background-color: #AA4949; 
+        }
+
+         .cardcharmander{
+            padding: 5%;
+            border: #612020 3px solid;
+            border-radius: 12%;
+            background-color: #AA4949; 
+        }
 
     </style>
     <header>
@@ -225,10 +261,31 @@
             <div class="CaixaPesquisa">
                 <input type="text" class="pesquisarr" placeholder="Pesquisar..">
             </div>
+
+            <div class="pokerockers">
+                <div class="pokemons" id="pokerocks">
+                <!--
+                <h1 class="cardsquirtle">Squirtle</h1>
+                <h1 class="cardbulbasaur">Bulbasaur</h1>
+                <h1 class="cardcharmander">Charmander</h1> -->
+                </div>
+            </div>
         </section>
 
     </main>
+<script>
 
+    let todosPokemon = ["Pikachu", "Squirtle", "Bulbasaur", "Charmander"];
+
+     function cards(){
+        let pokerocks = document.getElementById('pokerocks');
+        pokerocks.innerHTML = 
+        `
+        <h1 class="cardpikachu">${todosPokemon[0]}</h1>
+        `
+    }
+    cards();
+</script>
 </body>
 
 </html>
