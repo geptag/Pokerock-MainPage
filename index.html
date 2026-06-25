@@ -2,297 +2,298 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Principal</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">  
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pagina Principal</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
- <style>
-        .Titulo {
-            font-family: "Luckiest Guy", cursive;
-            color: #FFD1D1;
-            font-size: 250%;
-            margin: 1%;
-            letter-spacing: 2px;
-            transition: 1.5s;
-        }
-        .Titulo:hover{
-            transform: rotateY(360deg);
-        }
+	<style>
+		.Titulo {
+			font-family: "Luckiest Guy", cursive;
+			color: #FFD1D1;
+			font-size: 250%;
+			margin: 1%;
+			letter-spacing: 2px;
+			transition: 1.5s;
+		}
 
-        header {
-            background-color: #AA4949;
-            width: 100%;
-            height: 80%;
-            display: flex;
-            align-items: center;
-        }
+		.Titulo:hover {
+			transform: rotateY(360deg);
+		}
 
-        body {
-            background-color: #DB7171;
-            margin: 0%;
-        }
+		header {
+			background-color: #AA4949;
+			width: 100%;
+			height: 80%;
+			display: flex;
+			align-items: center;
+		}
 
-        .BotoesDoMenu {
-        width: 100%;
-        }
+		body {
+			background-color: #DB7171;
+			margin: 0%;
+		}
 
-        .Album /* BOTÃO DO ALBUM */ { 
-            background-color: rgba(0, 0, 0, 0);
-            border-color: rgba(0, 0, 0, 0);
-            width: 55px;
-        }
+		.BotoesDoMenu {
+			width: 100%;
+		}
 
-        .albuns /* IMAGEM DO BOTÃO DO ALBUM */ {
-            width: 100%;
-            height: 100%;
-            border: 5px solid transparent;
-            transition: 0.3s ease-in-out;
-        }
+		/* BOTÃO DO ALBUM */
+		.Album {
+			background-color: rgba(0, 0, 0, 0);
+			border-color: rgba(0, 0, 0, 0);
+			width: 55px;
+		}
 
-        .albuns:hover {
-            border-radius: 25%;
-            border: 5px solid rgba(0, 0, 0, 0);
-            background-color: #612020;
-        }
+		/* IMAGEM DO BOTÃO DO ALBUM */
+		.albuns {
+			width: 100%;
+			height: 100%;
+			border: 5px solid transparent;
+			transition: 0.3s ease-in-out;
+		}
 
-        .Pokerock /* BOTÃO DA POKEROCK*/ {
-            background-color: rgba(124, 79, 79, 0);
-            border-color: rgba(119, 112, 112, 0);
-            width: 55px;
-        }
+		.albuns:hover {
+			border-radius: 25%;
+			border: 5px solid rgba(0, 0, 0, 0);
+			background-color: #612020;
+		}
 
-        .pokerockdouser /* IMAGEM DO BOTÃO DA POKEROCK*/ {
-            width: 100%;
-            height: 100%;
-            border: 5px solid transparent;
-            transition: 0.3s ease-in-out;
-        }
+		/* BOTÃO DA POKEROCK*/
+		.Pokerock {
+			background-color: rgba(124, 79, 79, 0);
+			border-color: rgba(119, 112, 112, 0);
+			width: 55px;
+		}
 
-        .pokerockdouser:hover {
-            background-color: #612020;
-            border: 5px solid rgba(0, 0, 0, 0);
-            border-radius: 25%;
-            
-        }
+		/* IMAGEM DO BOTÃO DA POKEROCK*/
+		.pokerockdouser {
+			width: 100%;
+			height: 100%;
+			border: 5px solid transparent;
+			transition: 0.3s ease-in-out;
+		}
 
-        .AbrirCartas {
-            display: flex;
-            justify-content: center;
-            margin-top: 4.3%;
-        }
+		.pokerockdouser:hover {
+			background-color: #612020;
+			border: 5px solid rgba(0, 0, 0, 0);
+			border-radius: 25%;
+		}
 
-        .Pesquisar {
-            display: flex;
-            margin-top: 75px;
-            margin-left: 20px;
-            margin-bottom: 540px;
-        }
+		.AbrirCartas {
+			display: flex;
+			justify-content: center;
+			margin-top: 4.3%;
+		}
 
-        .Abrir {
-            color: #FFD1D1;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 130%;
-            background-color: #AA4949;
-            border-radius: 20%;
-            height: 45px;
-            width: 95px;
-            border: 0px;
-            border-style: solid;
-            transition: 0.2s ease-in-out;
-        }
+		.Pesquisar {
+			display: flex;
+			margin-top: 75px;
+			margin-left: 20px;
+			margin-bottom: 540px;
+		}
 
-        .Abrir:hover {
-            background-color: #612020;
-        }
+		.Abrir {
+			color: #FFD1D1;
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			font-size: 130%;
+			background-color: #AA4949;
+			border-radius: 20%;
+			height: 45px;
+			width: 95px;
+			border: 0px;
+			border-style: solid;
+			transition: 0.2s ease-in-out;
+		}
 
-        .separador{
-        display: flex;
-        justify-content: center;
-        margin-top: 4%;
-        }
+		.Abrir:hover {
+			background-color: #612020;
+		}
 
-        .Linha {
-            margin-top: 1.8%;
-            border: none;
-            border-radius: 35%;
-            border-top: 8px solid #612020;
-            width: 90%;
-        }
+		.separador {
+			display: flex;
+			justify-content: center;
+			margin-top: 4%;
+		}
 
-        .pokebolainsana {
-        width: 40px;
-        position: absolute;
-        transition: 0.5s ease-in-out;
-        }
+		.Linha {
+			margin-top: 1.8%;
+			border: none;
+			border-radius: 35%;
+			border-top: 8px solid #612020;
+			width: 90%;
+		}
 
-        .pokebolainsana:hover{
-        transform: rotateZ(360deg);
-        }
+		.pokebolainsana {
+			width: 40px;
+			position: absolute;
+			transition: 0.5s ease-in-out;
+		}
 
-        .pesquisarr{
-            background-color: #FFD1D1;
-            font-size: 120%;
-            outline: none;
-            border: 2px solid #1f1e33 ;
-            border-radius: 5%;
-        }
+		.pokebolainsana:hover {
+			transform: rotateZ(360deg);
+		}
 
-        .pesquisarr:hover {
-            border: 2px solid #201010;
-        }
+		.pesquisarr {
+			background-color: #FFD1D1;
+			font-size: 120%;
+			outline: none;
+			border: 2px solid #1f1e33;
+			border-radius: 5%;
+		}
 
-        .CardsMisteriosos {
-            font-family: Arial, Helvetica, sans-serif;
-            color: #FFD1D1;
-            font-size: 120%;
-            display: flex;
-            justify-content: center;
-            gap: 3%;
-        }
+		.pesquisarr:hover {
+			border: 2px solid #201010;
+		}
 
-        .Card1{
-            padding: 5%;
-            border: #612020 3px solid;
-            border-radius: 12%;
-            background-color: #AA4949;
-            transition: 0.8s ease-in-out;
-        }
+		.CardsMisteriosos {
+			font-family: Arial, Helvetica, sans-serif;
+			color: #FFD1D1;
+			font-size: 120%;
+			display: flex;
+			justify-content: center;
+			gap: 3%;
+		}
 
-        .Card1:hover {
-            transform: rotateY(360deg);
-        }
+		.Card1 {
+			padding: 5%;
+			border: #612020 3px solid;
+			border-radius: 12%;
+			background-color: #AA4949;
+			transition: 0.8s ease-in-out;
+		}
 
-        .Card2 {
-            padding: 5%;
-            border: #612020 3px solid;
-            border-radius: 12%;
-            background-color: #AA4949;
-            transition: 0.8s ease-in-out;
-        }
+		.Card1:hover {
+			transform: rotateY(360deg);
+		}
 
-        .Card2:hover {
-            transform: rotateY(360deg);
-        }
+		.Card2 {
+			padding: 5%;
+			border: #612020 3px solid;
+			border-radius: 12%;
+			background-color: #AA4949;
+			transition: 0.8s ease-in-out;
+		}
 
-        .Card3 {
-            padding: 5%;
-            border: #612020 3px solid;
-            border-radius: 12%;
-            background-color: #AA4949;
-            transition: 0.8s ease-in-out;
-        }
+		.Card2:hover {
+			transform: rotateY(360deg);
+		}
 
-        .Card3:hover {
-            transform: rotateY(360deg);
-        }
+		.Card3 {
+			padding: 5%;
+			border: #612020 3px solid;
+			border-radius: 12%;
+			background-color: #AA4949;
+			transition: 0.8s ease-in-out;
+		}
 
-        .pokerockers{
-            font-family: Arial, Helvetica, sans-serif;
-            color: #FFD1D1;
-            font-size: 120%;
-            display: flex;
-            justify-content: center;
-            gap: 3%;
-        }
+		.Card3:hover {
+			transform: rotateY(360deg);
+		}
 
-         .cardpikachu{
-            padding: 5%;
-            border: #612020 3px solid;
-            border-radius: 12%;
-            background-color: #AA4949; 
-        }
+		.pokerockers {
+			font-family: Arial, Helvetica, sans-serif;
+			color: #FFD1D1;
+			font-size: 120%;
+			display: flex;
+			justify-content: center;
+			gap: 3%;
+		}
 
-         .cardsquirtle{
-            padding: 5%;
-            border: #612020 3px solid;
-            border-radius: 12%;
-            background-color: #AA4949; 
-        }
+		.cardpikachu {
+			padding: 5%;
+			border: #612020 3px solid;
+			border-radius: 12%;
+			background-color: #AA4949;
+		}
 
-         .cardbulbasaur{
-            padding: 5%;
-            border: #612020 3px solid;
-            border-radius: 12%;
-            background-color: #AA4949; 
-        }
+		.cardsquirtle {
+			padding: 5%;
+			border: #612020 3px solid;
+			border-radius: 12%;
+			background-color: #AA4949;
+		}
 
-         .cardcharmander{
-            padding: 5%;
-            border: #612020 3px solid;
-            border-radius: 12%;
-            background-color: #AA4949; 
-        }
+		.cardbulbasaur {
+			padding: 5%;
+			border: #612020 3px solid;
+			border-radius: 12%;
+			background-color: #AA4949;
+		}
 
-    </style>
-    <header>
-        <h1 class="Titulo">Pokérock</h1>
-        <nav class="BotoesDoMenu">
-            <button class="Album"><img src="layers.png" alt="Pokérock" class="albuns"></a></button>
-            <button class="Pokerock"><img src="user.png" alt="Pokérock do Usuário" class="pokerockdouser"></button>
-        </nav>
-    </header>
+		.cardcharmander {
+			padding: 5%;
+			border: #612020 3px solid;
+			border-radius: 12%;
+			background-color: #AA4949;
+		}
+	</style>
 
-    <main>
+	<header>
+		<h1 class="Titulo">Pokérock</h1>
+		<nav class="BotoesDoMenu">
+			<button class="Album"><img src="layers.png" alt="Pokérock" class="albuns"></a></button>
+			<button class="Pokerock"><img src="user.png" alt="Pokérock do Usuário" class="pokerockdouser"></button>
+		</nav>
+	</header>
 
-        <section>
-            <div class="CardsMisteriosos">
-                <h1 class="Card1">?</h1>
-                <h1 class="Card2">?</h1>
-                <h1 class="Card3">?</h1>
-            </div>
-        </section>
+	<main>
+		<section>
+			<div class="CardsMisteriosos">
+				<h1 class="Card1">?</h1>
+				<h1 class="Card2">?</h1>
+				<h1 class="Card3">?</h1>
+			</div>
+		</section>
 
-        <section class="AbrirCartas">
-            <button class="Abrir" id="abrir" onclick="abrir()">Abrir</button>
-        </section>
+		<section class="AbrirCartas">
+			<button class="Abrir" id="abrir" onclick="abrir()">Abrir</button>
+		</section>
 
-        <section class="separador">
-            <hr class="Linha">
-            <img src="pokeball.png" alt="" class="pokebolainsana">
-        </section>
+		<section class="separador">
+			<hr class="Linha">
+			<img src="pokeball.png" alt="" class="pokebolainsana">
+		</section>
 
-        <section class="Pesquisar">
-            <div class="CaixaPesquisa">
-                <input type="text" class="pesquisarr" placeholder="Pesquisar..">
-            </div>
+		<section class="Pesquisar">
+			<div class="CaixaPesquisa">
+				<input type="text" class="pesquisarr" placeholder="Pesquisar..">
+			</div>
 
-            <div class="pokerockers">
-                <div class="pokemons" id="pokerocks">
-                <!--
-                <h1 class="cardsquirtle">Squirtle</h1>
-                <h1 class="cardbulbasaur">Bulbasaur</h1>
-                <h1 class="cardcharmander">Charmander</h1> -->
-                </div>
-            </div>
+			<div class="pokerockers">
+				<div class="pokemons" id="pokerocks">
+					<!--
+						<h1 class="cardsquirtle">Squirtle</h1>
+						<h1 class="cardbulbasaur">Bulbasaur</h1>
+						<h1 class="cardcharmander">Charmander</h1> -->
+				</div>
+			</div>
 
-            
-            
-        </section>
+		</section>
 
-    </main>
-<script>
+	</main>
 
-    // let todosPokemon = ["Pikachu", "Squirtle", "Bulbasaur", "Charmander"];
-    let todosPokemonOBJ = [{nome: "Pikachu", img: "pikachu.png", tipo: "Elétrico"},
-                           {nome: "Squirtle", img: "squirtle.png", tipo: "água"},
-                           {nome: "Bulbasaur", img: "bulbasaur.png", tipo: "planta"},
-                           {nome: "Charmander", img: "charmander.webp", tipo: "fogo"}]
+	<script>
+		// let todosPokemon = ["Pikachu", "Squirtle", "Bulbasaur", "Charmander"];
+		let todosPokemonOBJ = [{ nome: "Pikachu", img: "pikachu.png", tipo: "Elétrico" },
+		{ nome: "Squirtle", img: "squirtle.png", tipo: "água" },
+		{ nome: "Bulbasaur", img: "bulbasaur.png", tipo: "planta" },
+		{ nome: "Charmander", img: "charmander.webp", tipo: "fogo" }]
 
-
-     function cards(){
-        let pokerocks = document.getElementById('pokerocks');
-        todosPokemonOBJ.forEach((pokerocks) => {pokerocks.innerHTML += `
+		function cards() {
+			let pokerocks = document.getElementById('pokerocks');
+			todosPokemonOBJ.forEach((pokerocks) => {
+				pokerocks.innerHTML += `
             <div><h1>${pokerocks.nome}</h1><img src="${pokerocks.img}" alt=""><h2>${pokerocks.tipo}</h2></div>
             `});
-    } //DEU ALGO DE ERRADO AI
-    cards();
-</script>
+		} //DEU ALGO DE ERRADO AI
+		cards();
+	</script>
 </body>
 
 </html>
