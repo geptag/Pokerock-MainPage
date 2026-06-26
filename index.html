@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">  
+</head>
+
+<body id="body">
+
+<style>
+        .Titulo {
+            font-family: "Luckiest Guy", cursive;
+            color: #FFD1D1;
+            font-size: 250%;
+            margin: 1%;
+            letter-spacing: 2px;
+            transition: 1.5s;
+        }
+        .Titulo:hover{
+            transform: rotateY(360deg);
+        }
+
+        header {
+            background-color: #AA4949;
+            width: 100%;
+            height: 80%;
+            display: flex;
+            align-items: center;
+        }
+
+        body {
+            background-color: #DB7171;
+            margin: 0%;
+        }
+
+        .BotoesDoMenu {
+        width: 100%;
+        }
+
+        .Album /* BOTÃO DO ALBUM */ { 
+            background-color: rgba(0, 0, 0, 0);
+            border-color: rgba(0, 0, 0, 0);
+            width: 55px;
+        }
+
+        .albuns /* IMAGEM DO BOTÃO DO ALBUM */ {
+            width: 100%;
+            height: 100%;
+            border: 5px solid transparent;
+            transition: 0.3s ease-in-out;
+        }
+
+        .albuns:hover {
+            border-radius: 25%;
+            border: 5px solid rgba(0, 0, 0, 0);
+            background-color: #612020;
+        }
+
+        .botaoTema /* BOTÃO DO TEMA */ { 
+            background-color: rgba(0, 0, 0, 0);
+            border-color: rgba(0, 0, 0, 0);
+            width: 55px;
+        }
+
+        .temas /* IMAGEM DO BOTÃO DO TEMA */ {
+            width: 100%;
+            height: 100%;
+            border: 5px solid transparent;
+            transition: 0.3s ease-in-out;
+        }
+
+        .temas:hover {
+            border-radius: 25%;
+            border: 5px solid rgba(0, 0, 0, 0);
+            background-color: #612020;
+        }
+
+        .Pokerock /* BOTÃO DA POKEROCK*/ {
+            background-color: rgba(124, 79, 79, 0);
+            border-color: rgba(119, 112, 112, 0);
+            width: 55px;
+        }
+
+        .pokerockdouser /* IMAGEM DO BOTÃO DA POKEROCK*/ {
+            width: 100%;
+            height: 100%;
+            border: 5px solid transparent;
+            transition: 0.3s ease-in-out;
+        }
+
+        .pokerockdouser:hover {
+            background-color: #612020;
+            border: 5px solid rgba(0, 0, 0, 0);
+            border-radius: 25%;
+            
+        }
+
+        .AbrirCartas {
+            display: flex;
+            justify-content: center;
+            margin-top: 4.3%;
+        }
+
+        .Pesquisar {
+            display: flex;
+            margin-top: 75px;
+            margin-left: 20px;
+            margin-bottom: 40px;
+        }
+
+        .Abrir {
+            color: #FFD1D1;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 130%;
+            background-color: #AA4949;
+            border-radius: 20%;
+            height: 45px;
+            width: 95px;
+            border: 0px;
+            border-style: solid;
+            transition: 0.2s ease-in-out;
+        }
+
+        .Abrir:hover {
+            background-color: #612020;
+        }
+
+        .separador{
+        display: flex;
+        justify-content: center;
+        margin-top: 4%;
+        }
+
+        .Linha {
+            margin-top: 1.2%;
+            border: none;
+            border-radius: 35%;
+            border-top: 8px solid #612020;
+            width: 90%;
+        }
+
+        .pokebolainsana {
+        width: 40px;
+        position: absolute;
+        transition: 0.5s ease-in-out;
+        }
+
+        .pokebolainsana:hover{
+        transform: rotateZ(360deg);
+        }
+
+        .pesquisarr{
+            background-color: #FFD1D1;
+            font-size: 120%;
+            outline: none;
+            border: 2px solid #1f1e33 ;
+            border-radius: 5%;
+        }
+
+        .pesquisarr:hover {
+            border: 2px solid #201010;
+        }
+
+        .CardsMisteriosos {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #FFD1D1;
+            font-size: 120%;
+            display: flex;
+            justify-content: center;
+            gap: 3%;
+        }
+
+        .Card1{
+            padding: 5%;
+            border: #612020 3px solid;
+            border-radius: 12%;
+            background-color: #AA4949;
+            transition: 0.8s ease-in-out;
+        }
+
+        .Card1:hover {
+            transform: rotateY(360deg);
+        }
+
+        .Card2 {
+            padding: 5%;
+            border: #612020 3px solid;
+            border-radius: 12%;
+            background-color: #AA4949;
+            transition: 0.8s ease-in-out;
+        }
+
+        .Card2:hover {
+            transform: rotateY(360deg);
+        }
+
+        .Card3 {
+            padding: 5%;
+            border: #612020 3px solid;
+            border-radius: 12%;
+            background-color: #AA4949;
+            transition: 0.8s ease-in-out;
+        }
+
+        .Card3:hover {
+            transform: rotateY(360deg);
+        }
+
+        .pokerockers{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #FFD1D1;
+            font-size: 120%;
+            display: flex;
+            justify-content: center;
+            gap: 3%;
+        }
+
+         .cardpikachu{
+            padding: 5%;
+            border: #612020 3px solid;
+            border-radius: 12%;
+            background-color: #AA4949; 
+        }
+
+         .cardsquirtle{
+            padding: 5%;
+            border: #612020 3px solid;
+            border-radius: 12%;
+            background-color: #AA4949; 
+        }
+
+         .cardbulbasaur{
+            padding: 5%;
+            border: #612020 3px solid;
+            border-radius: 12%;
+            background-color: #AA4949; 
+        }
+
+         .cardcharmander{
+            padding: 5%;
+            border: #612020 3px solid;
+            border-radius: 12%;
+            background-color: #AA4949; 
+        }
+
+        .divPokemons{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #FFD1D1;
+        background-color: #612020;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 250px;
+        border-radius: 15px;
+        }
+
+        .pokemonImg{
+        width: 200px;
+        background-color: #201010;
+        border-radius: 13px;
+        }
+
+        .botao{
+        cursor: pointer;
+        margin: 2px;
+        width: 25px;
+        height: 25px;
+        background-color: #FFD1D1;
+        border: none;
+        border-radius: 50%;
+        margin-left: 10px;
+        }
+
+        .imagemdopesquisar{
+        width: 140%;
+        margin-top: 2px;
+        margin-left: -2px;
+        }
+
+        .pokemons{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 50px;
+        margin-bottom: 50px;
+        }
+
+    </style>
+
+    <header>
+        <h1 class="Titulo">Pokérock</h1>
+        <nav class="BotoesDoMenu">
+            <button class="Album"><img src="imagens/layers.png" alt="Pokérock" class="albuns"></a></button>
+            <button class="Pokerock"><img src="imagens/user.png" alt="Pokérock do Usuário" class="pokerockdouser"></button>
+            <button class="botaoTema" onclick="paginaTema()"><img src="imagens/darktheme.png" alt="Lua escura" class="temas" id="botaodotema"></button> 
+        </nav>
+
+     
+
+        </header>
+
+    <main>
+
+        <section>
+            <div class="CardsMisteriosos">
+                <h1 class="Card1">?</h1>
+                <h1 class="Card2">?</h1>
+                <h1 class="Card3">?</h1>
+            </div>
+        </section>
+
+        <section class="AbrirCartas"> 
+            <button class="Abrir"   >Abrir</button>
+        </section>
+
+        <section class="separador">
+            <hr class="Linha">
+            <img src="imagens/pokeball.png" alt="" class="pokebolainsana">
+        </section>
+
+
+
+        <section class="Pesquisar">
+            <div class="CaixaPesquisa">
+                <input type="text" class="pesquisarr" placeholder="Pesquisar.." id="pesquisarBotao">
+            </div>
+                <button onclick="filtrar()" class="botao"><img src="imagens/search.png" alt="" class="imagemdopesquisar"></button>
+        </section>
+
+        <section>
+
+            <div>
+                <div class="pokemons" id="pokerocks">
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+<script>
+
+    let todosPokemonOBJ = [{nome: "Pikachu", img: "imagens/pikachu.png", tipo: "Tipo: Elétrico"},
+                           {nome: "Squirtle", img: "imagens/squirtle.png", tipo: "Tipo: Água"},
+                           {nome: "Bulbasaur", img: "imagens/bulbasaur.png", tipo: "Tipo: Planta"},
+                           {nome: "Charmander", img: "imagens/charmander.webp", tipo: "Tipo: Fogo"}]
+    let tela = document.getElementById('pokerocks');
+
+
+     function cards(todosPokemonOBJ){
+        todosPokemonOBJ.forEach((pokerocks) => {tela.innerHTML += `
+            <div class="divPokemons"><h1>${pokerocks.nome}</h1><img src="${pokerocks.img}" alt="" class="pokemonImg"><h2>${pokerocks.tipo}</h2></div>
+            `});
+    }
+    cards(todosPokemonOBJ);
+
+    function filtrar(){
+
+    tela.innerHTML = "";
+    var pesquisando = document.getElementById('pesquisarBotao').value;
+    let filter = todosPokemonOBJ.filter((valor) => {return valor.nome.toLowerCase().includes(pesquisando)});
+    cards(filter);
+    }
+
+    var botaotemas = getElementById('botaodotema');
+    var escuroAtivo = false;
+
+    function paginaTema(){
+        escuroAtivo = !escuroAtivo 
+
+        if (escuroAtivo == true){
+            botaotemas 
+        }
+    }
+
+</script>
+
+</body>
+
+</html>
